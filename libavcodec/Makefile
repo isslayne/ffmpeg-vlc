@@ -150,6 +150,7 @@ OBJS-$(CONFIG_WMV2DSP)                 += wmv2dsp.o
 OBJS-$(CONFIG_ZERO12V_DECODER)         += 012v.o
 OBJS-$(CONFIG_A64MULTI_ENCODER)        += a64multienc.o elbg.o
 OBJS-$(CONFIG_A64MULTI5_ENCODER)       += a64multienc.o elbg.o
+OBJS-$(CONFIG_AVS3_DECODER)          += libuavs3d.o
 OBJS-$(CONFIG_AAC_DECODER)             += aacdec.o aactab.o aacsbr.o aacps_float.o \
                                           mpeg4audio.o kbdwin.o \
                                           sbrdsp.o aacpsdsp_float.o cbrt_data.o
@@ -968,6 +969,8 @@ OBJS-$(CONFIG_LIBX262_ENCODER)            += libx264.o
 OBJS-$(CONFIG_LIBX264_ENCODER)            += libx264.o
 OBJS-$(CONFIG_LIBX265_ENCODER)            += libx265.o
 OBJS-$(CONFIG_LIBXAVS_ENCODER)            += libxavs.o
+OBJS-$(CONFIG_AVS2_ENCODER)               += libxavs2.o
+OBJS-$(CONFIG_AVS3_ENCODER)               += libuavs3e.o
 OBJS-$(CONFIG_LIBXVID_ENCODER)            += libxvid.o libxvid_rc.o
 OBJS-$(CONFIG_LIBZVBI_TELETEXT_DECODER)   += libzvbi-teletextdec.o ass.o
 
@@ -977,6 +980,8 @@ OBJS-$(CONFIG_AAC_PARSER)              += aac_parser.o aac_ac3_parser.o \
                                           mpeg4audio.o
 OBJS-$(CONFIG_AC3_PARSER)              += ac3tab.o aac_ac3_parser.o
 OBJS-$(CONFIG_ADX_PARSER)              += adx_parser.o adx.o
+OBJS-$(CONFIG_AVS2_PARSER)             += avs2_parser.o
+OBJS-$(CONFIG_AVS3_PARSER)             += avs3_parser.o
 OBJS-$(CONFIG_BMP_PARSER)              += bmp_parser.o
 OBJS-$(CONFIG_CAVSVIDEO_PARSER)        += cavs_parser.o
 OBJS-$(CONFIG_COOK_PARSER)             += cook_parser.o

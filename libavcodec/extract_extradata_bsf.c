@@ -245,6 +245,8 @@ static const struct {
     int (*extract)(AVBSFContext *ctx, AVPacket *pkt,
                    uint8_t **data, int *size);
 } extract_tab[] = {
+    { AV_CODEC_ID_AVS3,       extract_extradata_mpeg4   },
+    { AV_CODEC_ID_AVS2,       extract_extradata_mpeg4   },
     { AV_CODEC_ID_CAVS,       extract_extradata_mpeg4   },
     { AV_CODEC_ID_H264,       extract_extradata_h2645   },
     { AV_CODEC_ID_HEVC,       extract_extradata_h2645   },
@@ -304,6 +306,8 @@ fail:
 }
 
 static const enum AVCodecID codec_ids[] = {
+    AV_CODEC_ID_AVS3,
+    AV_CODEC_ID_AVS2,
     AV_CODEC_ID_CAVS,
     AV_CODEC_ID_H264,
     AV_CODEC_ID_HEVC,

@@ -81,6 +81,7 @@ static void register_all(void)
     REGISTER_DECODER(BRENDER_PIX,       brender_pix);
     REGISTER_DECODER(C93,               c93);
     REGISTER_DECODER(CAVS,              cavs);
+    REGISTER_DECODER(AVS3,              avs3);
     REGISTER_DECODER(CDGRAPHICS,        cdgraphics);
     REGISTER_DECODER(CDXL,              cdxl);
     REGISTER_DECODER(CFHD,              cfhd);
@@ -625,6 +626,8 @@ static void register_all(void)
     REGISTER_PARSER(ADX,                adx);
     REGISTER_PARSER(BMP,                bmp);
     REGISTER_PARSER(CAVSVIDEO,          cavsvideo);
+    REGISTER_PARSER(AVS2,               avs2);
+    REGISTER_PARSER(AVS3,               avs3);
     REGISTER_PARSER(COOK,               cook);
     REGISTER_PARSER(DCA,                dca);
     REGISTER_PARSER(DIRAC,              dirac);
